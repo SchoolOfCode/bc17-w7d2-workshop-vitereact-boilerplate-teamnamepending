@@ -1,10 +1,10 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -74,12 +74,41 @@ function App() {
           </div>
         </section>
       </main>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <footer class="footer">
+        <div class="colunms-container">
+          <div class="footer-column">
+            <p>Find us on:</p>
+            <ul class="footer-nav">
+              <li>
+                <a href="https://www.facebook.com" class="socials-link">
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com" class="socials-link">
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a href="https://www.tiktok.com" class="socials-link">
+                  TikTok
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <p>Contact us:</p>
+            <address>
+              <a href="mailto:info@firepalace.co.uk" class="email-link">
+                info@firepalace.co.uk
+              </a>
+            </address>
+          </div>
+        </div>
+      </footer>
     </>
-  )
+  );
 }
 
-
-export default App
+export default App;
