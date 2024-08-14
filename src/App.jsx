@@ -2,36 +2,16 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-
+import Header from './Components/Header';
+import HeroSection from './Components/HeroSection.jsx';
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <header class="header-container">
-        <h1>🔥 Fireplace Palace</h1>
-      </header>
+      <Header />
       <main>
-        <section class="hero-section">
-          <img
-            src="/images/hero-mobile.png"
-            srcset="/images/hero-mobile.png 900w, /images/hero-desktop.png 901w"
-            sizes="(max-width: 900px) 100vw,
-             901px"
-            alt="Cozy living room with a fireplace"
-            class="hero-image"
-          />
-
-          <div class="hero-description">
-            <p class="hero-headline">
-              Discover the <br />
-              perfect fireplace ...
-            </p>
-            <p class="consultation-paragraph">
-              Book consultation: <span class="number-span">0121 345 6789</span>
-            </p>
-          </div>
-        </section>
+      <HeroSection />
 
         <hr class="separator" />
 
@@ -111,4 +91,7 @@ function App() {
   );
 }
 
+
 export default App;
+
+
