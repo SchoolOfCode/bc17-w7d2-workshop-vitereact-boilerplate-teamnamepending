@@ -2,10 +2,10 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import Header from './Components/Header';
-import HeroSection from './Components/HeroSection.jsx';
+import Header from './Components/Header/Header';
+import HeroSection from './Components/HeroSection/HeroSection';
+import Footer from './Components/Footer/Footer';
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -54,39 +54,8 @@ function App() {
           </div>
         </section>
       </main>
-      <footer class="footer">
-        <div class="colunms-container">
-          <div class="footer-column">
-            <p>Find us on:</p>
-            <ul class="footer-nav">
-              <li>
-                <a href="https://www.facebook.com" class="socials-link">
-                  Facebook
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com" class="socials-link">
-                  Instagram
-                </a>
-              </li>
-              <li>
-                <a href="https://www.tiktok.com" class="socials-link">
-                  TikTok
-                </a>
-              </li>
-            </ul>
-          </div>
+    <Footer />
 
-          <div class="footer-column">
-            <p>Contact us:</p>
-            <address>
-              <a href="mailto:info@firepalace.co.uk" class="email-link">
-                info@firepalace.co.uk
-              </a>
-            </address>
-          </div>
-        </div>
-      </footer>
     </>
   );
 }
